@@ -1,4 +1,5 @@
-const reverseString = function(string) {
+function reverseString(string) {
+    
     let reversedString = ''
 
     let iterations = string.length
@@ -9,7 +10,6 @@ const reverseString = function(string) {
         
     }
     return reversedString;
-};
+}
 
-// Do not edit below this line
-module.exports = reverseString;
+console.log(reverseString('promising stranger'));
