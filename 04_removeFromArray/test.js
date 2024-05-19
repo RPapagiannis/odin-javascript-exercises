@@ -1,4 +1,5 @@
-const removeFromArray = function (originalArray, ...removedItems) {
+function removeFromArray(originalArray, ...removedItems) {
+    
     const newArray = []
 
     for (let item of originalArray) {
@@ -8,7 +9,7 @@ const removeFromArray = function (originalArray, ...removedItems) {
         newArray.push(item)
     }
     return newArray
-};
+}
 
-// Do not edit below this line
-module.exports = removeFromArray;
+console.log(removeFromArray([1, 2, 3], 1))
+
