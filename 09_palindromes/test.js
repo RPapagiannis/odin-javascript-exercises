@@ -1,16 +1,15 @@
-const palindromes = function (string) {
+function verifyPalindrome(string) {
+    
     let reversedString = string.toLowerCase().split('').reverse().join('').replace('!', '');
 
     console.log(reversedString)
 
-    if (reversedString === string.toLowerCase().replace('!', '')) {
+    if(reversedString === string.replace('!', '')) {
         return true;
     }
 
     else {
         return false;
     }
-};
-
-// Do not edit below this line
-module.exports = palindromes;
+}
+console.log(verifyPalindrome('racecar!'));
